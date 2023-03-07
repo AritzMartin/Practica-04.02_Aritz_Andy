@@ -1,0 +1,37 @@
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.principal {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #0617ad;
+    font-family:Arial;
+}
+form {
+    margin:0 auto;
+    width:400px;
+}
+input, textarea {
+    width:380px;
+    height:27px;
+    background:#ffffff;
+    border:2px solid #000000;
+    padding:10px;
+    margin-top:5px;
+    font-size:15px;
+    color:#000000;
+}
+textarea {
+    height:150px;
+}
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
