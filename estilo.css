@@ -9,6 +9,7 @@ label {
     width:510px;
     color: #0617ad;
     font-family:Arial;
+    text-shadow: 1px 1px #0267ff
 }
 form {
     margin:0 auto;
@@ -23,6 +24,7 @@ input, textarea {
     margin-top:5px;
     font-size:15px;
     color:#000000;
+    
 }
 textarea {
     height:150px;
