@@ -20,11 +20,21 @@ if (isset($_POST["nombre"], $_POST["email"],
           $_POST["mensaje"]) and $_POST["nombre"] !="" and
           $_POST["email"]!="" and $_POST["mensaje"]!="" ){
 
-    // Traspasamos a variables locales, para evitar 
-       complicaciones con las comillas:
+    // Traspasamos a variables locales, para evitar complicaciones con las comillas:
     $nombre = $_POST["nombre"];
     $email = $_POST["email"];
     $mensaje = $_POST["mensaje"];
+    // Preparamos la orden SQL
+    $consulta = "INSERT INTO $db_table_name (id,nombre,email,mensaje) VALUES ('0','$nombre','$email','$mensaje')";
+    // Realizamos la consulta
+    $db_response = $db_connection->query($consulta);
+    if ($db_response) {
+        header('Location: Success.html');
+    } else {
+        header('Location: Fail.html');
+    }
+
+
 } else {
     echo '<p>Por favor, complete el <a href="index.html">formulario</a></p>';
 }
